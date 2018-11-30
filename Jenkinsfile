@@ -8,5 +8,8 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
+        stage('AfterBuild'){
+            echo 'You are on after build stage please mention what to nbe done'
+        }
     }
 }
