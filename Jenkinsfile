@@ -10,6 +10,7 @@ pipeline {
         }
         stage('AfterBuild'){
             steps{
+                input 'Is ready for production?'
                 echo 'You are on after build stage please mention what to nbe done'
             }
         }
